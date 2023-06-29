@@ -15,30 +15,31 @@ img {
   padding: 0 15px;
 }
 
-.head-contact {
+.contacts {
   display: flex;
   justify-content: flex-end;
   gap: 50px;
 }
-.header-contact-item {
+.contacts__item {
   display: flex;
   gap: 10 px;
 }
-.header-contact-link {
+.contacts__link {
   text-decoration: none;
 }
-.header-contact-link:hover .header-contact-link-text {
+.contacts__link:hover {
   color: #2196f3;
 }
-.header-contact-link:hover .svg-contact-icon {
+.contacts__text:hover {
   fill: #2196f3;
+  color: #2196f3;
 }
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header-contact-link-text {
+.contacts__text {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
@@ -46,26 +47,24 @@ img {
   letter-spacing: 0.02em;
   color: #757575;
 }
-.svg-mail {
+.contacts__icon {
   margin: 0;
 }
-.svg-mail:hover {
+.contacts__icon:hover {
   fill: #2196f3;
 }
-.svg-phone:hover {
-  fill: #2196f3;
-}
-.menu {
+
+.navbar__list {
   flex-direction: row;
   display: flex;
   justify-content: space-between;
   gap: 46px;
 }
-.underline {
+.navbar__link--underline {
   position: relative;
   color: #2196f3;
 }
-.underline::after {
+.navbar__link--underline::after {
   position: absolute;
   content: "";
   top: 45px;
@@ -75,7 +74,7 @@ img {
   border-radius: 4px;
   background-color: #2196f3;
 }
-.logo-nav {
+.header__left-side {
   display: flex;
   font-family: "Raleway";
   color: #2196f3;
@@ -86,11 +85,11 @@ img {
   justify-content: space-between;
   gap: 93px;
 }
-.logo-final {
+.logo {
   justify-content: space-between;
   font-family: "Raleway";
 }
-.logo {
+.logo__link {
   font-family: "Raleway";
   color: black;
   line-height: 1.19;
@@ -98,13 +97,13 @@ img {
   font-size: 26px;
   text-decoration: none;
 }
-.logo span {
+.logo__highlight {
   color: #2196f3;
 }
-.logo:hover {
+.logo__link:hover {
   color: #2196f3;
 }
-.menu-links {
+.navbar__link {
   display: flex;
   color: black;
   list-style: none;
@@ -113,15 +112,15 @@ img {
   line-height: 1.14;
   text-decoration: none;
 }
-.menu-links:hover {
+.navbar__link:hover {
   color: #2196f3;
 }
-.main-description {
+.hero__wrap {
   padding: 200px;
   text-align: center;
   margin: 0 auto;
 }
-.main-description > h1 {
+.hero__desc {
   color: white;
   font-size: 44px;
   font-weight: 900;
@@ -151,7 +150,7 @@ img {
 .contact-phone:hover {
   color: #2196f3;
 }
-.button-description {
+.hero__button {
   font-weight: 900;
   font-size: 16px;
   line-height: 1.88;
@@ -170,7 +169,7 @@ h4 {
   color: #212121;
   margin-bottom: 10px;
 }
-.our-strenghts {
+.about-us__list {
   display: flex;
   padding: 0;
   gap: 30px;
@@ -204,7 +203,7 @@ h4 {
 ul {
   list-style: none;
 }
-h2 {
+.what-we-do__desc {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -213,7 +212,7 @@ h2 {
   padding-bottom: 50px;
   padding-top: 94px;
 }
-.what-we-do {
+.what-we-do__gallery-list {
   display: flex;
   flex-direction: row;
   padding: 0;
@@ -222,10 +221,10 @@ h2 {
   margin: 0 auto;
   padding-bottom: 94px;
 }
-.what-we-do-item {
+.what-we-do-item__gallery-items {
   position: relative;
 }
-.description-wrap {
+.gallery-items__sidebar {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -233,7 +232,7 @@ h2 {
   padding: 27px 0;
   background: rgba(47, 48, 58, 0.8);
 }
-.description-title {
+.sidebar__desc {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -244,17 +243,29 @@ h2 {
   text-transform: uppercase;
   color: #ffffff;
 }
-.section-background {
+.hero {
   background-color: #2f303a;
   height: 600px;
   background-image: url(../images/Team-image.jpg);
 }
-.team-background {
+.team {
   background: #f5f4fa;
 
   padding-bottom: 94px;
 }
-.our-team {
+.team__heading {
+  color: #212121;
+  text-align: center;
+  font-size: 36px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.team__list {
   display: flex;
   gap: 30px;
   padding: 0;
@@ -280,53 +291,46 @@ h2 {
   color: #2196f3;
   border-color: #2196f3;
 }
-.human {
+.list__human {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
   text-align: center;
 }
-h3 {
+.human__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   color: #212121;
 }
-.job-description {
+.human__subtitle {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   color: #757575;
 }
-.social-media {
+.socials__icon {
   cursor: pointer;
 }
-.media {
+.list__socials {
   width: 44px;
   height: 44px;
   padding: 10px;
   fill: #afb1b8;
 }
-.media-icons {
+.media-list {
   display: flex;
   gap: 10px;
   justify-content: center;
   padding: 0;
 }
-.media:hover {
+.list__socials:hover {
   fill: #ffffff;
   background: #2196f3;
   border-radius: 50%;
 }
-h4 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  color: #212121;
-  padding-top: 20px;
-  padding-left: 24px;
-}
+
 .LIP {
   margin: 0;
   padding: 0;
@@ -350,20 +354,20 @@ h4 {
   overflow: hidden;
   display: flex;
 }
-.footer-block {
+.description__block {
   display: flex;
   float: left;
 }
-.webstudio-footer {
+.block__webstudio-logo {
   padding: 0;
   padding-right: 70px;
   padding-top: 60px;
   margin: 0 auto;
 }
-.footer-final {
+.address__list {
   padding-top: 20px;
 }
-.address {
+.list__address {
   font-family: roboto;
   font-weight: 400px;
   font-size: 14px;
@@ -373,7 +377,7 @@ h4 {
   font-style: normal;
   padding-bottom: 9px;
 }
-.mail-footer {
+.mail__link {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -383,7 +387,7 @@ h4 {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
-.phone-footer {
+.phone__link {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -393,7 +397,7 @@ h4 {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
-.logo1 {
+.webstudio-logo__highlight {
   color: #2196f3;
   margin: 0;
   font-family: "Raleway";
@@ -402,7 +406,7 @@ h4 {
   font-size: 26px;
   text-decoration: none;
 }
-.logo2 {
+.webstudio-logo__link {
   color: #fff;
   margin: 0;
   font-family: "Raleway";
@@ -411,7 +415,7 @@ h4 {
   font-size: 26px;
   text-decoration: none;
 }
-.logo2:hover {
+.webstudio-logo__link:hover {
   color: #2196f3;
 }
 .dolacz-do-nas {
@@ -427,16 +431,16 @@ h4 {
   float: left;
   padding-top: 72px;
 }
-.join-us {
+.dolacz-do-nas__box {
   padding-bottom: 10px;
   font-family: Roboto;
   font-weight: 700;
 }
-.media-footer {
+.box__media-list {
   display: flex;
   gap: 10px;
 }
-.social-footer {
+.media-list__socials {
   fill: #fff;
   background: rgba(255, 255, 255, 0.1);
   padding: 12px;
@@ -445,10 +449,10 @@ h4 {
   justify-content: center;
   align-items: center;
 }
-.social-footer svg {
+.media-list__socials {
   display: block;
 }
-.social-footer:hover {
+.media-list__socials:hover {
   fill: #ffffff;
   background: #2196f3;
   cursor: pointer;
