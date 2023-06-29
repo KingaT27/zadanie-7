@@ -14,11 +14,7 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
-.navbar-menu {
-  display: flex;
-  flex-direction: row;
-  text-decoration: none;
-}
+
 .head-contact {
   display: flex;
   justify-content: flex-end;
@@ -37,7 +33,7 @@ img {
 .header-contact-link:hover .svg-contact-icon {
   fill: #2196f3;
 }
-.header-container {
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
